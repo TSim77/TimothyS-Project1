@@ -12,7 +12,7 @@ pipeline {
         
         stage('Clone Git') { 
             steps { 
-                git 'https://github.com/TSim77/flask-demo.git' 
+                git 'https://github.com/TSim77/TimothyS-Project1.git' 
             }
         }
         
