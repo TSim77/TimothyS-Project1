@@ -54,5 +54,17 @@ pipeline {
              }
             }
         }
+        
+        stage('Deploy to EKS Cluster') {
+            steps {
+                script {
+                    kubernetesDeploy(
+                        configs: 'TimothyS-Project1/eksDeployment.yml',
+                        kubeconfigId: 'EKS',
+                        enableConfigSubstitution: true
+                    )
+                }
+            }
+        }
     }
 }
