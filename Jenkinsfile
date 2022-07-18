@@ -4,7 +4,7 @@ pipeline {
     
     environment {
         dockerImage = ''
-        registry = 'tsim77/project_1_docker_repository'
+        registry = 'tsim77/project_2_docker_repository'
         registryCredential = 'dockerhub_id'
     }
     
